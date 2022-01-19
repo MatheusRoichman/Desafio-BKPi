@@ -1,4 +1,4 @@
-class ArrayUnpacker {
+class ArrayUnzipper {
   unzip(List<List<int>> matrix) {
     List<int> unzippedArray = [];
     
@@ -15,6 +15,6 @@ class ArrayUnpacker {
 }
 
 main() {
-  ArrayUnpacker au = ArrayUnpacker();
+  ArrayUnzipper au = ArrayUnzipper();
   print(au.unzip([[3, 2, 1], [], [4, 6, 5], [9, 7, 8]));
 }
