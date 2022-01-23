@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    
+    <title>Notifications</title>
+    <meta name="description" content="Turn notifications on and off" />
+    <meta name="author" content="Matheus Lima Roichman" />
+    
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <form class="notifications__form settings" onsubmit="setNotificationsState(event)">
+        <h1>Notifications</h1>
+        
+        <label class="input-container">On
+          <input type="radio" name="ntf" id="ntf-on" value="On" />
+          <span class="checkmark"></span>
+        </label>
+        
+        <label class="input-container">Off
+          <input type="radio" name="ntf" id="ntf-off" value="Off" />
+          <span class="checkmark"></span>
+        </label>
+        
+        <button type="submit" class="form__submit btn">Save</button>
+      </form>
+    </div>
+    
+    <script src="./assets/js/setNotificationsState.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

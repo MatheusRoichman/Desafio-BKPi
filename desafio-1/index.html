@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    
+    <title>Settings</title>
+    <meta name="description" content="Configure your app" />
+    <meta name="author" content="Matheus Lima Roichman" />
+    
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <span class="icon--back"><</span>
+      
+      <header class="profile" id="profile">
+        <button id="upgrade" class="btn">
+          <a href="#" rel="noopener noreferrer" target="_blank">Upgrade Now - Go Pro</a>
+        </button>
+      </header>
+      
+      <section class="settings">
+        <h2 class="settings__title">Settings</h2>
+        
+        <nav class="settings__nav">
+          <ul class="settings__nav__list">
+            <div class="settings__group">
+              <li class="settings__nav__list__item no-clickable">
+                <div>
+                  <span>
+                    <svg class="settings__icon icon--dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+                      <g transform="translate(128 128) scale(0.66 0.66)" style="">
+	                      <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform="translate(-190.8 -190.80000000000004) scale(4.24 4.24)" >
+	                      <path d="M 87.823 60.7 c -0.463 -0.423 -1.142 -0.506 -1.695 -0.214 c -15.834 8.398 -35.266 2.812 -44.232 -12.718 c -8.966 -15.53 -4.09 -35.149 11.101 -44.665 c 0.531 -0.332 0.796 -0.963 0.661 -1.574 c -0.134 -0.612 -0.638 -1.074 -1.259 -1.153 c -9.843 -1.265 -19.59 0.692 -28.193 5.66 C 13.8 12.041 6.356 21.743 3.246 33.35 S 1.732 57.08 7.741 67.487 c 6.008 10.407 15.709 17.851 27.316 20.961 C 38.933 89.486 42.866 90 46.774 90 c 7.795 0 15.489 -2.044 22.42 -6.046 c 8.601 -4.966 15.171 -12.43 18.997 -21.586 C 88.433 61.79 88.285 61.123 87.823 60.7 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <p>Dark Mode</p>
+                </div>
+                <label class="switch" style="align-self: center;">
+                  <input id="colorSchemeToggler" type="checkbox" onchange="toggleColorScheme()">
+                  <span class="slider round"></span>
+                </label>
+              </li>
+            
+            <div class="settings__group">
+              <div>
+                <li class="settings__nav__list__item" onclick="redirect('/notifications.html')">
+                  <div>
+                    <span>
+                      <svg class="settings__icon icon--pink" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rounded" transform="translate(-444.000000, -4100.000000)">
+            <g id="Social" transform="translate(100.000000, 4044.000000)">
+                <g id="-Round-/-Social-/-notifications" transform="translate(340.000000, 54.000000)">
+                    <g>
+                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path d="M12,22 C13.1,22 14,21.1 14,20 L10,20 C10,21.1 10.89,22 12,22 Z M18,16 L18,11 C18,7.93 16.36,5.36 13.5,4.68 L13.5,4 C13.5,3.17 12.83,2.5 12,2.5 C11.17,2.5 10.5,3.17 10.5,4 L10.5,4.68 C7.63,5.36 6,7.92 6,11 L6,16 L4.71,17.29 C4.08,17.92 4.52,19 5.41,19 L18.58,19 C19.47,19 19.92,17.92 19.29,17.29 L18,16 Z" id="🔹-Icon-Color" fill="#fff"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                    </span>
+                    <p>Notifications</p>
+                  </div>
+                  <div class="icon--next">
+                    <p style="margin-right: 0.5rem; font-size: 1.3rem" id="notifications-state"></p>
+                   <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+                   </div>
+                </li>
+              </div>
+              <li class="settings__nav__list__item">
+                  <div>
+                    <span>
+                      <svg class="settings__icon icon--pink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g><path d="M321.8,455.5h356.4V321.8c0-49.2-17.4-91.2-52.2-126c-34.8-34.8-76.8-52.2-126-52.2c-49.2,0-91.2,17.4-126,52.2c-34.8,34.8-52.2,76.8-52.2,126L321.8,455.5L321.8,455.5z M900.9,522.3v400.9c0,18.6-6.5,34.3-19.5,47.3c-13,13-28.8,19.5-47.3,19.5H165.9c-18.6,0-34.3-6.5-47.3-19.5c-13-13-19.5-28.8-19.5-47.3V522.3c0-18.6,6.5-34.3,19.5-47.3c13-13,28.8-19.5,47.3-19.5h22.3V321.8c0-85.4,30.6-158.7,91.9-219.9C341.3,40.7,414.7,10,500,10c85.3,0,158.7,30.6,219.9,91.9c61.3,61.3,91.9,134.6,91.9,219.9v133.6h22.3c18.6,0,34.3,6.5,47.3,19.5C894.4,488,900.9,503.7,900.9,522.3L900.9,522.3z"/></g>
+</svg>
+                    </span>
+                    <p>Privacy</p>
+                  </div>
+                  <svg class="icon--next" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+              </li>
+              <li class="settings__nav__list__item">
+                <div>
+                  <span>
+                    <svg class="settings__icon icon--pink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+
+<g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M4700.9,4802.1c-899.4-884.6-2248.5-1476.4-3856.4-1690.6c-76.4-10.6-120.9-31.8-167.6-78.5l-63.6-63.6l12.7-362.7c42.4-1137,333-2583.6,729.7-3620.9c574.8-1508.2,1453-2634.5,2573-3309.1c364.9-220.6,937.6-466.7,1081.8-466.7c144.2,0,719.1,248.2,1081.8,466.7C7477.6-3487.6,8440.6-2026.1,8987.9,76.1c210,803.9,358.5,1775.4,386.1,2530.6l12.7,362.7L9323,3033c-46.7,46.7-91.2,67.9-167.6,78.5C7537,3327.9,6200.6,3917.6,5265.2,4833.9c-165.4,161.2-186.7,176.1-267.3,176.1C4917.3,5010,4898.2,4997.3,4700.9,4802.1z"/></g></g>
+</svg>
+                  </span>
+                  <p>Security</p>
+                </div>
+                <svg class="icon--next" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+              </li>
+            </div>
+            
+            <div class="settings__group">
+              <li class="settings__nav__list__item">
+                <div>
+                  <span>
+                    <svg class="settings__icon icon--green" style="overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M723.43 508.6c-54.123 47.75-125.977 77.056-205.163 77.056-80.364 0-153.4-30.259-207.765-79.421C184.05 539.325 105.81 652.308 105.81 787.277v68.782c0 160.968 812.39 160.968 812.39 0v-68.782c-0.005-131.415-74.22-242.509-194.77-278.677z m-205.163 28.13c140.165 0 254.095-109.44 254.095-244.64S658.668 47.218 518.267 47.218c-139.93 0-253.855 109.675-253.855 244.874 0 135.204 113.925 244.639 253.855 244.639z m0 0"  /></svg>
+                  </span>
+                  <p>Account</p>
+                </div>
+                <svg class="icon--next" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+              </li>
+              <li class="settings__nav__list__item">
+                <div>
+                  <span>
+                    <svg class="settings__icon icon--green" style="overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M559.261538 748.307692h-98.461538c-15.753846 0-27.569231-11.815385-27.569231-27.56923v-29.538462c0-82.707692 53.169231-157.538462 131.938462-185.107692 23.630769-7.876923 45.292308-21.661538 63.015384-41.353846 98.461538-118.153846 7.876923-259.938462-110.276923-263.876924-43.323077-1.969231-84.676923 13.784615-116.184615 43.323077-25.6 23.630769-41.353846 53.169231-45.292308 86.646154-1.969231 11.815385-13.784615 21.661538-29.538461 21.661539h-98.461539c-17.723077 0-31.507692-13.784615-29.538461-31.507693 7.876923-74.830769 41.353846-141.784615 94.523077-194.953846 63.015385-59.076923 143.753846-90.584615 230.4-88.615384C687.261538 43.323077 821.169231 177.230769 827.076923 340.676923c5.907692 137.846154-78.769231 261.907692-206.769231 309.169231-17.723077 7.876923-29.538462 21.661538-29.538461 39.384615v29.538462c0 17.723077-15.753846 29.538462-31.507693 29.538461zM590.769231 955.076923c0 15.753846-13.784615 29.538462-29.538462 29.538462h-98.461538c-15.753846 0-29.538462-13.784615-29.538462-29.538462v-98.461538c0-15.753846 13.784615-29.538462 29.538462-29.538462h98.461538c15.753846 0 29.538462 13.784615 29.538462 29.538462v98.461538z"  /></svg>
+                  </span>
+                  <p>Help</p>
+                </div>
+                <svg class="icon--next" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+              </li>
+              <li class="settings__nav__list__item">
+                <div>
+                  <span class="settings__icon icon--green" style="font-family: 'Roboto Slab', serif; display:flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: bold;">
+                    i
+                  </span>
+                  <p>About</p>
+                </div>
+                <svg class="icon--next" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
