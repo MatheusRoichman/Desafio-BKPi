@@ -84,10 +84,10 @@ document.querySelector('.icon--back').addEventListener('click', () => redirect('
 const redirect = url => window.location.assign(url);
 
 const toggleColorScheme = () => {
-  const checked = document.querySelector('#colorSchemeToggler').checked;
+  const isChecked = document.querySelector('#colorSchemeToggler').checked;
   const root = document.querySelector(':root').style;
   
-  if (checked) {
+  if (isChecked) {
     root.setProperty('--body-bg', '#161616');
     root.setProperty('--settings-bg', '#000');
     root.setProperty('--text-color', '#fff');
